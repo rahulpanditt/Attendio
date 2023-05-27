@@ -108,7 +108,7 @@
   left: calc(50% - 65.5px);
   width: 2.5rem;
   height: 2.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .home {
