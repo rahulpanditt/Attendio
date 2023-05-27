@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Attendance Recorded!!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/public/css/Attendance_Recorded.css" />
+  <link rel="stylesheet" href="/public/css/global_attendance_recorded.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap" />
+</head>
+<body>
+  <div class="attendio-desktop-faculty-recor" data-animate-on-scroll>
+    <div class="rectangles">
+      <div class="rectangles-child"></div>
+      <div class="rectangles-item"></div>
+      <div class="rectangles-inner"></div>
+      <div class="rectangles-inner"></div>
+    </div>
+    <div class="recorded">
+      <img class="checked-1-icon" alt="" src="/public/images/attendio_logo.png" />
+      <b class="attendance-recorded">
+        <p class="attendance">ATTENDANCE</p>
+        <p class="attendance">RECORDED!</p>
+      </b>
+    </div>
+    <button class="home-button" id="homeButton">
+      <div class="home-button-child"></div>
+      <div class="icon-home-parent">
+        <img class="icon-home" alt="" src="/public/images/home.svg" />
+        <div class="home">HOME</div>
+      </div>
+    </button>
+    <div class="present-absent">
+      <div class="present-absent-child"></div>
+      <div class="present-absent-parent">
+        <div class="present-absent1">
+          <p class="attendance">
+            <span>Present:</span>
+            <span class="span"> </span>
+          </p>
+          <p class="attendance">
+            <span>
+              <span>Absent:</span>
+              <span class="span1"> </span>
+            </span>
+            <span class="span1">
+              <span class="span3"> </span>
+            </span>
+          </p>
+        </div>
+        <div class="div">
+          <p class="attendance">69</p>
+          <p class="attendance">10</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var homeButton = document.getElementById("homeButton");
+    if (homeButton) {
+      homeButton.addEventListener("click", function (e) {
+        window.location.href = "Desktop-Student.html";
+      });
+    }
+    var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+    var observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+  </script>
+</body>
+
+</html>

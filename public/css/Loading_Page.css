@@ -1,0 +1,62 @@
+.rectangles-child {
+  width: 65.87%;
+  right: 17.27%;
+  bottom: -19.63rem;
+  left: 16.86%;
+  background-color: #a0b3c5;
+  height: 53.94rem;
+  transform: rotate(-6.08deg);
+}
+
+.rectangles-child,
+.rectangles-inner,
+.rectangles-item {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.rectangles-item {
+  width: 58.61%;
+  right: 21.62%;
+  bottom: -10.81rem;
+  left: 19.77%;
+  background-color: #576e8f;
+  height: 56.31rem;
+  transform: rotate(8.26deg);
+}
+
+.rectangles-inner {
+  width: 64.1%;
+  top: 0;
+  right: 16.45%;
+  left: 19.46%;
+  background-color: var(--color-white);
+  height: 33.58rem;
+  transform: rotate(3.88deg);
+}
+
+.rectangles {
+  position: absolute;
+  top: -17.87rem;
+  left: -54.58rem;
+  width: 258.16rem;
+  height: 105.68rem;
+}
+
+.untitledattendio-new-logo-1 {
+  position: absolute;
+  top: calc(50% - 85px);
+  left: calc(50% - 150px);
+  width: 18.75rem;
+  height: 5.31rem;
+  object-fit: cover;
+}
+
+.attendio-desktop-loading {
+  position: relative;
+  border-radius: 20px;
+  background-color: #d4e4ed;
+  width: 100%;
+  height: 61.38rem;
+  overflow: hidden;
+}

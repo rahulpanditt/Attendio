@@ -1,0 +1,329 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+
+.rectangles-child {
+  width: 65.87%;
+  right: 17.27%;
+  bottom: -19.63rem;
+  left: 16.86%;
+  background-color: #a0b3c5;
+  height: 53.94rem;
+  transform: rotate(-6.08deg);
+}
+
+.rectangles-child,
+.rectangles-inner,
+.rectangles-item {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.rectangles-item {
+  width: 58.61%;
+  right: 21.62%;
+  bottom: -10.81rem;
+  left: 19.77%;
+  background-color: var(--color-slategray-100);
+  height: 56.31rem;
+  transform: rotate(8.26deg);
+}
+
+.rectangles-inner {
+  width: 64.1%;
+  top: 0;
+  right: 16.45%;
+  left: 19.46%;
+  background-color: var(--color-white);
+  height: 33.58rem;
+  transform: rotate(3.88deg);
+}
+
+.rectangles {
+  position: absolute;
+  top: -17.87rem;
+  left: -54.58rem;
+  width: 258.16rem;
+  height: 105.68rem;
+}
+
+.check-attendance-button-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 131.9px);
+  border-radius: var(--br-8xs);
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border: 3px solid var(--color-slategray-100);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 1.14rem;
+  left: calc(50% - 98.46px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-slategray-100);
+  text-align: center;
+  width: 12.25rem;
+  height: 1.65rem;
+}
+
+.check-attendance-button,
+.logout-button-child {
+  position: absolute;
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.check-attendance-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 10.5rem;
+  left: 0.06rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.check-attendance-button:hover {
+  animation: 0.3s ease s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.check-attendance-button:active {
+  animation: 1s ease 0s 1 normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.logout-button-child {
+  bottom: 0;
+  left: calc(50% - 130.04px);
+  border-radius: var(--br-8xs);
+  background-color: var(--color-slategray-200);
+  backdrop-filter: blur(4px);
+}
+
+.check-attendance {
+  position: absolute;
+  bottom: 0.62rem;
+  left: calc(50% - 109.04px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  width: 13.63rem;
+  height: 2rem;
+}
+
+.logout-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 5.25rem;
+  left: 0.06rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.logout-button:hover {
+  animation: 0.3s ease s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.logout-button:active {
+  animation: 1s ease 0s normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.scan-qr1 {
+  position: absolute;
+  bottom: 0.74rem;
+  left: calc(50% - 53.04px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  width: 6.56rem;
+  height: 2rem;
+}
+
+.scan-qr {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.scan-qr:hover {
+  animation: .3s ease s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.scan-qr:active {
+  animation: 1s ease 0s normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.buttons {
+  position: relative;
+  width: 16.32rem;
+  height: 14.43rem;
+}
+
+.attendio-desktop-student-inner {
+  position: absolute;
+  top: 36rem;
+  left: calc(50% - 152px);
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  font-size: var(--font-size-xl);
+  color: #314869;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+.butons {
+  position: absolute;
+  top: 14.75rem;
+  left: calc(50% - 152px);
+  border-radius: var(--br-xl);
+  background-color: rgba(160, 179, 197, 0.4);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.31rem;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.welcome-back {
+  margin: 0;
+}
+
+.welcome-back-tanishka-container {
+  position: relative;
+  font-weight: 500;
+}
+
+.profile-icon {
+  position: relative;
+  width: 2.89rem;
+  height: 2.88rem;
+}
+
+.header {
+  position: absolute;
+  top: 4rem;
+  left: 2.13rem;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.frame-child {
+  border-radius: var(--br-xl);
+  background-color: #a0b3c5;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 19rem;
+  height: 7.31rem;
+}
+
+.div,
+.total-attendance-till-container {
+  position: absolute;
+  bottom: 1.5rem;
+  left: calc(50% - 129px);
+  font-weight: 600;
+  display: inline-block;
+  width: 8.63rem;
+}
+
+
+.div {
+  bottom: 2.38rem;
+  left: calc(50% - 0px);
+  font-size: 2.19rem;
+  color: var(--color-white);
+  text-align: center;
+  width: 8.38rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rectangle-parent {
+  align-self: stretch;
+  position: relative;
+  height: 7.31rem;
+}
+
+.attendio-desktop-student-inner.animate {
+  animation: 0.2s ease 0s 1 normal forwards;
+}
+
+.attendio-desktop-student-inner:hover {
+  animation: .5s ease 0.s infinite normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.attendio-desktop-student {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #d4e4ed;
+  width: 100%;
+  height: 61.38rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.56rem;
+  color: #313160;
+  font-family: var(--font-roboto);
+}

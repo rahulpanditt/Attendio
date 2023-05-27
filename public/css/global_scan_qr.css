@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+
+  /* Colors */
+  --color-white: #fff;
+
+  /* border radiuses */
+  --br-xl: 20px;
+}

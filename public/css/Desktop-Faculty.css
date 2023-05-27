@@ -1,0 +1,370 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.rectangles-child {
+  width: 65.87%;
+  right: 17.27%;
+  bottom: -19.63rem;
+  left: 16.86%;
+  background-color: #a0b3c5;
+  height: 53.94rem;
+  transform: rotate(-6.08deg);
+}
+
+.rectangles-child,
+.rectangles-inner,
+.rectangles-item {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.rectangles-item {
+  width: 58.61%;
+  right: 21.62%;
+  bottom: -10.81rem;
+  left: 19.77%;
+  background-color: var(--color-slategray-100);
+  height: 56.31rem;
+  transform: rotate(8.26deg);
+}
+
+.rectangles-inner {
+  width: 64.1%;
+  top: 0;
+  right: 16.45%;
+  left: 19.46%;
+  background-color: var(--color-white);
+  height: 33.58rem;
+  transform: rotate(3.88deg);
+}
+
+.rectangles {
+  position: absolute;
+  top: -17.87rem;
+  left: -54.58rem;
+  width: 258.16rem;
+  height: 105.68rem;
+}
+
+.logout-button-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 130.04px);
+  border-radius: var(--br-8xs);
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border: 3px solid var(--color-slategray-100);
+  box-sizing: border-box;
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 1.14rem;
+  left: calc(50% - 98.46px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-slategray-100);
+  text-align: center;
+  width: 12.25rem;
+  height: 1.65rem;
+}
+
+.check-attendance-button-child,
+.logout-button {
+  position: absolute;
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.logout-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 10.5rem;
+  left: 0;
+}
+
+.logout-button:hover {
+  animation: 1s ease 0s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.logout-button:active {
+  animation: 1s ease 0s 1 normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.check-attendance-button-child {
+  bottom: 0;
+  left: calc(50% - 130.04px);
+  border-radius: var(--br-8xs);
+  background-color: var(--color-slategray-200);
+  backdrop-filter: blur(4px);
+}
+
+.check-attendance {
+  position: absolute;
+  bottom: 0.62rem;
+  left: calc(50% - 109.04px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  width: 13.63rem;
+  height: 2rem;
+}
+
+.check-attendance-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 5.25rem;
+  left: 0.06rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.check-attendance-button:hover {
+  animation: 0.3s ease s 1 normal none scale-up;
+  opacity: 1;
+}
+
+.check-attendance-button:active {
+  animation: 1s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.display-qr {
+  position: absolute;
+  bottom: 0.74rem;
+  left: calc(50% - 53.04px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  width: 7.25rem;
+  height: 2rem;
+}
+
+.display-qr-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.display-qr-button:hover {
+  animation: 0.3s ease-out s 1 normal none scale-up;
+  opacity: 1;
+}
+
+.display-qr-button:active {
+  animation: 1s ease 0s infinite normal forwards shadow-inset-center;
+  opacity: 1;
+}
+
+.buttons {
+  position: relative;
+  width: 16.32rem;
+  height: 14.43rem;
+}
+
+.butons {
+  position: absolute;
+  top: 14.75rem;
+  left: calc(50% - 152px);
+  border-radius: var(--br-xl);
+  background-color: rgba(160, 179, 197, 0.4);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.31rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-back {
+  margin: 0;
+}
+
+.welcome-back-tanishka-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+}
+
+.profile-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.89rem;
+  height: 2.88rem;
+}
+
+.header {
+  position: absolute;
+  height: 5.91%;
+  width: 95.52%;
+  top: 6.52%;
+  right: 2.23%;
+  bottom: 87.58%;
+  left: 2.25%;
+}
+
+.present-absent-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 152px);
+  border-radius: var(--br-xl);
+  background-color: #bccddb;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 19rem;
+  height: 7.31rem;
+}
+
+.span {
+  font-size: var(--font-size-16xl);
+}
+
+.span,
+.span1 {
+  color: var(--color-black);
+}
+
+.span3 {
+  font-size: var(--font-size-16xl);
+}
+
+.div,
+.present-absent1 {
+  position: absolute;
+  top: 0;
+  font-weight: 600;
+}
+
+.present-absent1 {
+  left: 0;
+  display: inline-block;
+  width: 7.44rem;
+}
+
+.div {
+  left: 8.81rem;
+  font-size: var(--font-size-16xl);
+  color: var(--color-darkslateblue);
+}
+
+.present-absent-parent {
+  position: absolute;
+  top: 1.13rem;
+  left: 3.81rem;
+  width: 11.31rem;
+  height: 5.13rem;
+}
+
+.present-absent {
+  position: absolute;
+  bottom: 16.88rem;
+  left: calc(50% - 148px);
+  width: 19rem;
+  height: 7.31rem;
+  opacity: 1;
+
+  font-size: var(--font-size-11xl);
+  color: var(--color-steelblue);
+}
+
+.present-absent:hover {
+  animation: 0.000001s ease 0s infinite normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.attendio-desktop-faculty-home {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #d4e4ed;
+  width: 100%;
+  height: 61.38rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.56rem;
+  color: var(--color-darkslateblue);
+  font-family: var(--font-roboto);
+}
+
+@media screen and (max-width: 1200px) {
+
+  .check-attendance-button:hover,
+  .display-qr-button:hover {
+    animation: 1s ease 0s 1 normal none shadow-drop-bottom;
+    opacity: 1;
+  }
+
+  @keyframes shadow-drop-bottom {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+    }
+  }
+
+  @keyframes shadow-drop-bottom {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+    }
+  }
+}

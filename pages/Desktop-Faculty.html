@@ -1,0 +1,117 @@
+!DOCTYPE html>
+<html>
+
+<head>
+  <title>Faculty</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Faculty</title>
+  <link rel="stylesheet" href="/public/css/global_desk_fac.css" />
+  <link rel="stylesheet" href="/public/css/Desktop-Faculty.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap" />
+</head>
+
+<body>
+  <main class="attendio-desktop-faculty-home">
+    <div class="rectangles">
+      <div class="rectangles-child"></div>
+      <div class="rectangles-item"></div>
+      <div class="rectangles-inner"></div>
+      <div class="rectangles-inner"></div>
+    </div>
+    <div class="butons">
+      <div class="buttons">
+        <button onclick="window.location.href='Login_Page.html';" class="logout-button" id="logoutButton">
+          <div class="logout-button-child"></div>
+          <b class="logout">Logout</b>
+        </button>
+        <button class="check-attendance-button" id="checkAttendanceButton">
+          <div class="check-attendance-button-child"></div>
+          <b class="check-attendance">
+            <p class="welcome-back">CHECK ATTENDANCE</p>
+          </b>
+        </button>
+        <button onclick="window.location.href='Display_QR.html';" class="display-qr-button"
+          id="displayQRButton">
+          <div class="check-attendance-button-child"></div>
+          <b class="display-qr">DISPLAY QR</b>
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <div class="welcome-back-tanishka-container">
+        <p class="welcome-back">Welcome Back,</p>
+        <p class="welcome-back">Tanishka!</p>
+      </div>
+      <img class="profile-icon" alt="" src="/public/images/pfp.svg" />
+    </div>
+    <div class="present-absent" data-animate-on-scroll>
+      <div class="present-absent-child"></div>
+      <div class="present-absent-parent">
+        <div class="present-absent1">
+          <p class="welcome-back">
+            <span>Present:</span>
+            <span class="span"> </span>
+          </p>
+          <p class="welcome-back">
+            <span>
+              <span>Absent:</span>
+              <span class="span1"> </span>
+            </span>
+            <span class="span1">
+              <span class="span3"> </span>
+            </span>
+          </p>
+        </div>
+        <div class="div">
+          <p class="welcome-back">69</p>
+          <p class="welcome-back">10</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    var logoutButton = document.getElementById("logoutButton");
+    if (logoutButton) {
+      logoutButton.addEventListener("click", function (e) {
+        // Please sync "Attendio_desktop_credentials" to the project
+      });
+    }
+
+    var checkAttendanceButton = document.getElementById("checkAttendanceButton");
+    if (checkAttendanceButton) {
+      checkAttendanceButton.addEventListener("click", function (e) {
+        // Please sync "Attendio desktop_faculty_recorded" to the project
+      });
+    }
+
+    var displayQRButton = document.getElementById("displayQRButton");
+    if (displayQRButton) {
+      displayQRButton.addEventListener("click", function (e) {
+        // Please sync "Attendio desktop_faculty_display QR" to the project
+      });
+    }
+    var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+    var observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Display-QR</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/css/global_display_qr.css" />
+  <link rel="stylesheet" href="/css/Display_QR.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600&display=swap" />
+  <title>Display QR Code</title>
+</head>
+
+<body>
+  <div class="attendio-desktop-faculty-displ">
+    <div class="rectangles">
+      <div class="rectangles-child"></div>
+      <div class="rectangles-item"></div>
+      <div class="rectangles-inner"></div>
+      <div class="rectangles-inner"></div>
+    </div>
+    <div class="camera">
+      <div class="vector-parent">
+        <img class="frame-child" alt="" src="/images/rectangle.svg" />
+
+        <div class="scan-to-record">SCAN TO RECORD YOUR PRESENTEE</div>
+      </div>
+      <img class="icon-camera" alt="" src="/images/qrcode.png" />
+    </div>
+    <button onclick="window.location.href='DF';" class="stop-display" id="stopDisplay">
+      <div class="stop-displaying">STOP DISPLAYING</div>
+    </button>
+  </div>
+
+  <script>
+    var iconXCircle = document.getElementById("iconXCircle");
+    if (iconXCircle) {
+      iconXCircle.addEventListener("click", function (e) {
+        // Please sync "Attendio desktop_faculty_home" to the project
+      });
+    }
+
+    var stopDisplay = document.getElementById("stopDisplay");
+    if (stopDisplay) {
+      stopDisplay.addEventListener("click", function (e) {
+        // Please sync "Attendio desktop_faculty_recorded" to the project
+      });
+    }
+  </script>
+</body>
+
+</html>

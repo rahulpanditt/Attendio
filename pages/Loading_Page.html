@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/public/css/Loading_Page.css" />
+  <link rel="stylesheet" href="/public/css/global_login_page.css" />
+  <title>Loading</title>
+  <style>
+    /* CSS for fade-out animation */
+    body {
+      opacity: 1;
+      transition: opacity 0.5s ease-out;
+    }
+
+    body.fade-out {
+      opacity: 0;
+    }
+  </style>
+  <script>
+    function redirect() {
+      document.body.classList.add('fade-out');
+      setTimeout(function () {
+        window.location.href = 'Login_Page.html'; // Replace 'target.html' with the desired destination page
+      }, 300); // Adjust the delay to match the CSS transition duration (0.5s = 500 milliseconds)
+    }
+
+    // Wait for a few seconds and then call the redirect function
+    window.onload = function () {
+      setTimeout(redirect, 3000); // Replace '3000' with the desired delay in milliseconds (e.g., 3000 = 3 seconds)
+    };
+  </script>
+</head>
+
+<body>
+  <main class="attendio-desktop-loading">
+    <div class="rectangles">
+      <div class="rectangles-child"></div>
+      <div class="rectangles-item"></div>
+      <div class="rectangles-inner"></div>
+      <div class="rectangles-inner"></div>
+    </div>
+    <img class="untitledattendio-new-logo-1" alt="" src="/public/images/attendio_logo.png" />
+
+    <div class="cell">
+      <img src="/public/images/loadinglogo.gif" style="width: 1.1rem;height: auto;" alt="Loading">
+    </div>
+  </main>
+</body>
+
+</html>

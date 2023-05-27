@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="/public/css/global_desk_stud.css"/>
+  <link rel="stylesheet" href="/public/css/Desktop-Student.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap" />
+</head>
+
+<body>
+  <div class="attendio-desktop-student">
+    <div class="rectangles">
+      <div class="rectangles-child"></div>
+      <div class="rectangles-item"></div>
+      <div class="rectangles-inner"></div>
+      <div class="rectangles-inner"></div>
+    </div>
+    <div class="butons">
+      <div class="buttons">
+        <button onclick="window.location.href='Login_Page.html';" class="check-attendance-button">
+          <div class="check-attendance-button-child"></div>
+          <b class="logout">Logout</b>
+        </button>
+        <button class="logout-button">
+          <div class="logout-button-child"></div>
+          <b class="check-attendance">
+            <p class="welcome-back">CHECK ATTENDANCE</p>
+          </b>
+        </button>
+        <button onclick="window.location.href='Scan-QR.html';" class="scan-qr">
+          <div class="logout-button-child"></div>
+          <b class="scan-qr1">SCAN QR</b>
+        </button>
+      </div>
+    </div>
+    <div class="header">
+      <div class="welcome-back-tanishka-container">
+        <p class="welcome-back">Welcome Back,</p>
+        <p class="welcome-back">Tanishka!</p>
+      </div>
+      <img class="profile-icon" alt="" src="/public/images/pfp.svg" />
+    </div>
+    <div class="attendio-desktop-student-inner">
+      <div class="rectangle-parent">
+        <div class="frame-child">
+          <div class="total-attendance-till-container">
+            <p class="welcome-back">Total Attendance</p>
+            <p class="welcome-back">Till Date:</p>
+          </div>
+        </div>
+        <div class="div">80/100</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+    var observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+
+.rectangles-child {
+  width: 65.87%;
+  right: 17.27%;
+  bottom: -19.63rem;
+  left: 16.86%;
+  background-color: #a0b3c5;
+  height: 53.94rem;
+  transform: rotate(-6.08deg);
+}
+
+.rectangles-child,
+.rectangles-inner,
+.rectangles-item {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.rectangles-item {
+  width: 58.61%;
+  right: 21.62%;
+  bottom: -10.81rem;
+  left: 19.77%;
+  background-color: #576e8f;
+  height: 56.31rem;
+  transform: rotate(8.26deg);
+}
+
+.rectangles-inner {
+  width: 64.1%;
+  top: 0;
+  right: 16.45%;
+  left: 19.46%;
+  background-color: var(--color-white);
+  height: 33.58rem;
+  transform: rotate(3.88deg);
+}
+
+.rectangles {
+  position: absolute;
+  top: -17.87rem;
+  left: -54.58rem;
+  width: 258.16rem;
+  height: 105.68rem;
+}
+
+.checked-1-icon {
+  position: absolute;
+  top: calc(50% - 115.5px);
+  left: calc(50% - 60.5px);
+  width: 7.56rem;
+  height: 7.44rem;
+  object-fit: cover;
+}
+
+.attendance {
+  margin: 0;
+}
+
+.attendance-recorded {
+  position: absolute;
+  top: calc(50% + 45.5px);
+  left: calc(50% - 95.5px);
+}
+
+.recorded {
+  position: absolute;
+  top: 13.31rem;
+  left: calc(50% - 96px);
+  width: 11.94rem;
+  height: 14.44rem;
+}
+
+.home-button-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 130.04px);
+  border-radius: 5px;
+  background-color: rgba(212, 228, 237, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.icon-home {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 65.5px);
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+.home {
+  position: absolute;
+  bottom: 0.13rem;
+  left: calc(50% - 5.5px);
+  font-size: 1.56rem;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: #2d3648;
+  text-align: center;
+}
+
+.icon-home-parent {
+  position: absolute;
+  top: 0.69rem;
+  left: 4rem;
+  width: 8.19rem;
+  height: 2.5rem;
+}
+
+.home-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 51.63rem;
+  left: calc(50% - 130px);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.home-button:hover {
+  animation: 0.5s ease 0s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.home-button:active {
+  animation: 0.5s ease 0s 1 normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.present-absent-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 152px);
+  border-radius: var(--br-xl);
+  background-color: rgba(160, 179, 197, 0.47);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 19rem;
+  height: 7.31rem;
+}
+
+.span {
+  font-size: var(--font-size-16xl);
+}
+
+.span,
+.span1 {
+  color: var(--color-black);
+}
+
+.span3 {
+  font-size: var(--font-size-16xl);
+}
+
+.div,
+.present-absent1 {
+  position: absolute;
+  top: 0;
+  font-weight: 600;
+}
+
+.present-absent1 {
+  left: 0;
+  display: inline-block;
+  width: 7.44rem;
+}
+
+.div {
+  left: 8.81rem;
+  font-size: var(--font-size-16xl);
+  color: #313160;
+}
+
+.present-absent-parent {
+  position: absolute;
+  top: 1.13rem;
+  left: 3.81rem;
+  width: 11.31rem;
+  height: 5.13rem;
+}
+
+.present-absent {
+  position: absolute;
+  top: calc(50% + 17px);
+  left: calc(50% - 152px);
+  width: 19rem;
+  height: 7.31rem;
+  text-align: left;
+}
+
+.present-absent:hover {
+  animation: 0.5s ease 0s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.attendio-desktop-faculty-recor {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #d4e4ed;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 61.38rem;
+  overflow: hidden;
+  opacity: 1;
+  text-align: center;
+  font-size: var(--font-size-11xl);
+  color: var(--color-slategray-100);
+  font-family: var(--font-roboto);
+}
+
+.attendio-desktop-faculty-recor.animate {
+  animation: 1s ease 0s 1 normal forwards shadow-drop-bottom;
+}
+
+@media screen and (max-width: 1200px) {
+  .present-absent {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .present-absent:hover {
+    display: flex;
+    max-width: 300rem;
+    max-height: 117rem;
+  }
+
+  .attendio-desktop-faculty-recor {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .home-button:hover {
+    animation: 0.5s ease 0s infinite normal none shadow-drop-bottom;
+    opacity: 1;
+  }
+
+  @keyframes shadow-drop-bottom {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+    }
+  }
+
+  .home-button:active {
+    animation: 0.5s ease 0s infinite normal none shadow-inset-center;
+    opacity: 1;
+  }
+
+  @keyframes shadow-inset-center {
+    0% {
+      box-shadow: inset 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-button:hover {
+    animation: 0.5s ease 0s 1 normal none shadow-drop-bottom;
+    opacity: 1;
+  }
+
+  @keyframes shadow-drop-bottom {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+    }
+  }
+
+  .home-button:active {
+    animation: 0.5s ease 0s infinite normal none shadow-inset-center;
+    opacity: 1;
+  }
+
+  @keyframes shadow-inset-center {
+    0% {
+      box-shadow: inset 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html> -->
+<html>
+  <body>
+<script src="html5-qrcode.min.js"></script>
+<style>
+  .result{
+    background-color: green;
+    color:#fff;
+    padding:20px;
+  }
+  .row{
+    display:flex;
+  }
+</style>
+
+
+<div class="row">
+  <div class="col">
+    <div style="width:500px;" id="reader"></div>
+  </div>
+  <div class="col" style="padding:30px;">
+    <h4>SCAN RESULT</h4>
+    <div id="result">Result Here</div>
+  </div>
+</div>
+<button onclick="verify()" > Mark My Attendance </button>
+<script type="text/javascript">
+function onScanSuccess(qrCodeMessage) {
+    document.getElementById('result').innerHTML = '<span class="result">'+qrCodeMessage+'</span>';
+    verify();
+  }
+  
+  function onScanError(errorMessage) {
+  document.getElementById('result').innerHTML = '<span class="result">'+errorMessage+'</span>';
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+    "reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess, onScanError);
+function verify(){
+  var qrCodeMessage = document.getElementById('result').innerText;
+  if(qrCodeMessage == "Result Here"){
+    alert("Please Scan QR Code First");
+
+  }else if(qrCodeMessage == "QR Code Scanning is not supported in this browser"){
+    alert("QR Code Scanning is not supported in this browser");
+}
+  else if(qrCodeMessage=="password"){
+    alert("Your Attendance is Marked");
+    window.location.href = '/AR'; // Replace 'target.html' with the desired destination page
+  }
+  else{
+    alert("Invalid QR Code \nPlease Scan Again");
+  }
+}
+
+</script>
+</body>
+</html>

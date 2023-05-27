@@ -1,0 +1,230 @@
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/50%);
+  }
+}
+
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.rectangles-child {
+  width: 65.87%;
+  right: 17.27%;
+  bottom: -19.63rem;
+  left: 16.86%;
+  background-color: #a0b3c5;
+  height: 53.94rem;
+  transform: rotate(-6.08deg);
+}
+
+.rectangles-child,
+.rectangles-inner,
+.rectangles-item {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.rectangles-item {
+  width: 58.61%;
+  right: 21.62%;
+  bottom: -10.81rem;
+  left: 19.77%;
+  background-color: #576e8f;
+  height: 56.31rem;
+  transform: rotate(8.26deg);
+}
+
+.rectangles-inner {
+  width: 64.1%;
+  top: 0;
+  right: 16.45%;
+  left: 19.46%;
+  background-color: var(--color-white);
+  height: 33.58rem;
+  transform: rotate(3.88deg);
+}
+
+.rectangles {
+  position: absolute;
+  top: -17.87rem;
+  left: -54.58rem;
+  width: 258.16rem;
+  height: 105.68rem;
+}
+
+.untitledattendio-new-logo-1 {
+  position: absolute;
+  top: calc(50% - 271px);
+  left: calc(50% - 150px);
+  width: 18.75rem;
+  height: 5.31rem;
+  object-fit: cover;
+}
+
+.login1 {
+  font-weight: 600;
+}
+
+.span {
+  font-weight: 500;
+}
+
+.login {
+  position: absolute;
+  top: 21.56rem;
+  left: calc(50% - 59px);
+}
+
+.faculty-login1 {
+  margin: 0;
+}
+
+.faculty-login {
+  position: absolute;
+  bottom: 0.62rem;
+  left: calc(50% - 109.04px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  width: 13.63rem;
+  height: 2rem;
+}
+
+.faculty-login-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-slategray-100);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 129.54px);
+  border-radius: var(--br-8xs);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.faculty-login-button:hover {
+  animation: 1s ease 0s 1 normal none shadow-drop-bottom;
+  opacity: 1;
+}
+
+.faculty-login-button:active {
+  animation: 1s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+
+.student-login {
+  position: absolute;
+  bottom: 0.62rem;
+  left: calc(50% - 75.04px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: center;
+  width: 9.5rem;
+  height: 2rem;
+}
+
+.student-login-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-slategray-100);
+  position: absolute;
+  bottom: 5.25rem;
+  left: calc(50% - 130.54px);
+  border-radius: var(--br-8xs);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  width: 16.25rem;
+  height: 3.93rem;
+}
+
+.student-login-button:hover {
+  animation: 0.3s ease-out s 1 normal none scale-up;
+  opacity: 1;
+}
+
+.student-login-button:active {
+  animation: 1s ease 0s infinite normal forwards shadow-inset-center;
+  opacity: 1;
+}
+
+.buttons {
+  position: relative;
+  width: 16.32rem;
+  height: 9.18rem;
+}
+
+.butons {
+  position: absolute;
+  top: 27rem;
+  left: calc(50% - 150px);
+  border-radius: var(--br-xl);
+  background-color: rgba(160, 179, 197, 0.4);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 1.31rem;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.attendio-desktop-login {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #d4e4ed;
+  width: 100%;
+  height: 61.38rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 2.5rem;
+  color: #4d5971;
+  font-family: var(--font-roboto);
+}
+
+@media screen and (max-width: 1200px) {
+  .student-login-button:hover {
+    animation: 1s ease 0s 1 normal none shadow-drop-bottom;
+    opacity: 1;
+  }
+
+  @keyframes shadow-drop-bottom {
+    0% {
+      box-shadow: 0 0 0 0 transparent;
+    }
+
+    to {
+      box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+    }
+  }
+}
